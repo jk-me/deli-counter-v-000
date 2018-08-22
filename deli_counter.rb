@@ -7,7 +7,7 @@ def line(array)
   else
     s = "The line is currently: "
     array.each {|n| s << "#{array.index(n)+1}. #{n} "}
-    
+    s.chomp
     puts s
   end
 end
